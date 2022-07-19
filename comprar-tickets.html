@@ -93,31 +93,31 @@
 
                 <div class="divCorreo">
                     <label for="correo"></label> 
-                    <input type="email" id="correo" name="correo" placeholder="example@example.com" required class="textCorreo" autocomplete="on">
+                    <input type="email" id="mail" name="correo" placeholder="example@example.com" required class="textCorreo" autocomplete="on">
                 
                 </div> <br> 
 
                 <span class="cantidadEstudiante" id="datosCompra">
                     <span class="inputSeleccion">
                         <label for="cantidad"> Cantidad <br> </label>
-                        <input type="number" placeholder="Cantidad" id="cantidad" min="1" max="20">
+                        <input type="number" placeholder="Cantidad" id="cantidadTickets" min="1" max="20">
                     </span>
                     <span class="inputSeleccion">
                         <label for="categoria"> Categoría <br> </label> 
-                        <select id="categoria">                            
+                        <select id="categoriaSelect">                            
                            <option selected disabled>--- Seleccione ---</option>
-                            <option>Sin Categoría</option>
-                            <option>Estudiante</option>
-                            <option>Trainee</option>
-                            <option>Junior</option>
+                            <option value="0">Sin Categoría</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
                         </select>
                     </span>     
                 </span>
                                             
                 </div> <br> <br>
 
-                <div id="totalAPagar"  class="totalaAPagar" role="alert">                    
-                    <p><strong>Total a Pagar: $ </strong></p>                                 
+                <div class="totalaAPagar" role="alert">                    
+                    <p id="totalPago"> Total a Pagar: $ </p>                                 
                 </div> <br> <br>
 
                 <div class="btnBorrarResumen">
